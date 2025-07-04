@@ -1,0 +1,81 @@
+✅ Instalação da JDK e IntelliJ IDEA + Criação do Primeiro Projeto em Java
+1. Instalar a JDK (Java Development Kit)
+Acesse: https://www.oracle.com/java/technologies/javase-downloads.html
+
+Baixe a versão mais recente da JDK (Java SE).
+
+Instale normalmente no seu sistema.
+
+Após a instalação, confirme que está funcionando:
+
+Abra o terminal (ou Prompt de Comando)
+
+Digite:
+
+nginx
+Copiar
+Editar
+java -version
+Deve exibir a versão instalada.
+
+2. Instalar a IDE IntelliJ IDEA
+Acesse: https://www.jetbrains.com/idea/
+
+Baixe a versão Community (gratuita).
+
+Instale e abra a IntelliJ.
+
+3. Criar um Projeto em Java
+Na tela inicial da IntelliJ, clique em "New Project".
+
+Escolha:
+
+Language: Java
+
+Build System: IntelliJ
+
+JDK: selecione a JDK instalada
+
+Clique em Next > e dê um nome ao projeto (ex: MeuPrimeiroProjeto).
+
+Finalize clicando em Finish.
+
+4. Criar uma Classe com o Método Principal
+Clique com o botão direito na pasta src, escolha:
+New > Java Class
+
+Nomeie como MeuPrograma.
+
+Substitua o conteúdo com o seguinte código:
+
+java
+Copiar
+Editar
+public class MeuPrograma {
+    public static void main(String[] args) {
+        System.out.println("Seu Nome Aqui");
+    }
+}
+Substitua "Seu Nome Aqui" pelo seu nome verdadeiro.
+
+5. Executar o Programa
+Clique no botão verde de "play" ao lado do método main.
+
+O console será aberto abaixo e mostrará a saída:
+
+nginx
+Copiar
+Editar
+Seu Nome Aqui
+Se quiser, posso gerar esse código em um arquivo .java ou montar um PDF com o passo a passo. Deseja isso?
+
+
+
+
+
+
+
+
+
+Perguntar ao ChatGPT
+
