@@ -1,0 +1,58 @@
+
+✅ Tipos Wrapper e Métodos Interessantes
+Tipo Wrapper	Tipo Primitivo	Método Interessante	O que faz
+Integer	int	parseInt(String)	Converte uma string para número inteiro
+Double	double	parseDouble(String)	Converte uma string para número decimal
+Character	char	isLetter(char)	Verifica se o caractere é uma letra
+Boolean	boolean	parseBoolean(String)	Converte uma string ("true"/"false") para boolean
+String	—	toUpperCase()	Converte todos os caracteres da string para maiúsculas
+
+✅ Exemplo em Java utilizando três desses métodos
+Vamos usar:
+
+Integer.parseInt()
+
+Character.isLetter()
+
+String.toUpperCase()
+
+java
+Copiar
+Editar
+import java.util.Scanner;
+
+public class ExemploWrappers {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Usando Integer.parseInt()
+        System.out.print("Digite um número inteiro (em texto): ");
+        String numeroTexto = sc.nextLine();
+        int numero = Integer.parseInt(numeroTexto); // Converte texto para inteiro
+        System.out.println("Número + 10 = " + (numero + 10));
+
+        // Usando Character.isLetter()
+        System.out.print("Digite um único caractere: ");
+        char caractere = sc.nextLine().charAt(0);
+        boolean ehLetra = Character.isLetter(caractere);
+        System.out.println("É uma letra? " + ehLetra);
+
+        // Usando String.toUpperCase()
+        System.out.print("Digite seu nome: ");
+        String nome = sc.nextLine();
+        System.out.println("Nome em maiúsculas: " + nome.toUpperCase());
+
+        sc.close();
+    }
+}
+Se quiser, posso expandir o código para incluir Double e Boolean também. Deseja a versão completa com os 5 tipos?
+
+
+
+
+
+
+
+
+
+Perguntar ao ChatGPT
