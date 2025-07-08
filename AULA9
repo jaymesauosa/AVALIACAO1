@@ -1,0 +1,80 @@
+✅ Atividade 01: Sistema Escolar (Notas, Médias e Cálculos)
+java
+Copiar
+Editar
+import java.util.Scanner;
+
+public class SistemaEscolar {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double[] notas = new double[8];
+
+        // Entrada das 8 notas
+        for (int i = 0; i < 8; i++) {
+            System.out.print("Digite a nota " + (i + 1) + ": ");
+            notas[i] = sc.nextDouble();
+        }
+
+        // Cálculo das médias bimestrais
+        double bimestre1 = (notas[0] + notas[1]) / 2;
+        double bimestre2 = (notas[2] + notas[3]) / 2;
+        double semestre1 = (bimestre1 + bimestre2) / 2;
+
+        double bimestre3 = (notas[4] + notas[5]) / 2;
+        double bimestre4 = (notas[6] + notas[7]) / 2;
+        double semestre2 = (bimestre3 + bimestre4) / 2;
+
+        double mediaFinal = (semestre1 + semestre2) / 2;
+
+        // Saída formatada
+        System.out.println("\nPráticas\n");
+
+        System.out.printf("1º Bimestre: %.1f\n", bimestre1);
+        System.out.printf("2º Bimestre: %.1f\n", bimestre2);
+        System.out.printf("1º Semestre: %.1f\n", semestre1);
+        System.out.println("----------------------");
+        System.out.printf("3º Bimestre: %.1f\n", bimestre3);
+        System.out.printf("4º Bimestre: %.1f\n", bimestre4);
+        System.out.printf("2º Semestre: %.1f\n", semestre2);
+        System.out.println("----------------------");
+        System.out.printf("Média Final: %.1f\n", mediaFinal);
+
+        sc.close();
+    }
+}
+✅ Atividade 02: Conversão de Temperatura
+java
+Copiar
+Editar
+import java.util.Scanner;
+
+public class ConversaoTemperatura {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite a temperatura em Celsius (°C): ");
+        double celsius = sc.nextDouble();
+
+        double fahrenheit = (celsius * 9 / 5) + 32;
+        double kelvin = celsius + 273.15;
+
+        System.out.println("\nPráticas\n");
+        System.out.printf("Temperatura em Celsius: %.2f °C\n", celsius);
+        System.out.printf("Temperatura em Fahrenheit: %.2f °F\n", fahrenheit);
+        System.out.printf("Temperatura em Kelvin: %.2f K\n", kelvin);
+
+        sc.close();
+    }
+}
+Esses códigos já estão prontos para copiar e colar no IntelliJ ou qualquer outra IDE Java. Se quiser, posso juntar as duas atividades em um único programa com menu interativo. Deseja isso?
+
+
+
+
+
+
+
+
+
+Perguntar ao ChatGPT
