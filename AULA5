@@ -1,0 +1,37 @@
+
+
+✅ Questão 01: Verificação de Desconto de Produto
+java
+Copiar
+Editar
+public class VerificacaoDesconto {
+    public static void main(String[] args) {
+        // Variáveis de entrada
+        boolean produtoComDesconto = true;
+        boolean clienteTemCupom = false;
+
+        // Verificação com operador lógico OR (||)
+        boolean descontoAplicado = produtoComDesconto || clienteTemCupom;
+
+        // Exibição do resultado
+        System.out.println("Desconto aplicado: " + descontoAplicado);
+    }
+}
+✅ Questão 02: Autorização de Compra
+java
+Copiar
+Editar
+public class AutorizacaoCompra {
+    public static void main(String[] args) {
+        // Variáveis de entrada
+        boolean saldoSuficiente = true;
+        boolean contaVerificada = false;
+
+        // Verificação com operador lógico AND (&&)
+        boolean compraAutorizada = saldoSuficiente && contaVerificada;
+
+        // Exibição do resultado
+        System.out.println("Compra autorizada: " + compraAutorizada);
+    }
+}
+Se quiser, posso adaptar os programas para que os valores sejam digitados pelo usuário (com Scanner). Deseja essa versão interativa?
