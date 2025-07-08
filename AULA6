@@ -1,0 +1,91 @@
+✅ Questão 01: Cálculo de Nota Final
+java
+Copiar
+Editar
+import java.util.Scanner;
+
+public class NotaFinal {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        final double MEDIA_APROVACAO = 7.0;
+
+        System.out.print("Digite a nota da primeira prova: ");
+        double nota1 = sc.nextDouble();
+
+        System.out.print("Digite a nota da segunda prova: ");
+        double nota2 = sc.nextDouble();
+
+        double media = (nota1 + nota2) / 2;
+
+        boolean aprovado = media >= MEDIA_APROVACAO;
+
+        System.out.println("Aprovado: " + aprovado);
+
+        sc.close();
+    }
+}
+✅ Questão 02: Verificação de Compra
+java
+Copiar
+Editar
+import java.util.Scanner;
+
+public class VerificacaoCompra {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        final double TAXA_DESCONTO = 0.10;
+
+        System.out.print("Digite o preço do produto: ");
+        double preco = sc.nextDouble();
+
+        System.out.print("Digite o valor disponível do cliente: ");
+        double valorDisponivel = sc.nextDouble();
+
+        double precoComDesconto = preco - (preco * TAXA_DESCONTO);
+
+        boolean compraPermitida = valorDisponivel >= precoComDesconto;
+
+        System.out.println("Compra permitida: " + compraPermitida);
+
+        sc.close();
+    }
+}
+✅ Questão 03: Triagem para Doação de Sangue
+java
+Copiar
+Editar
+import java.util.Scanner;
+
+public class TriagemDoacao {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        final double PESO_MINIMO = 50.0;
+
+        System.out.print("Digite a idade da pessoa: ");
+        int idade = sc.nextInt();
+
+        System.out.print("Digite o peso corporal (kg): ");
+        double peso = sc.nextDouble();
+
+        boolean aptoParaDoar = idade >= 18 && peso >= PESO_MINIMO;
+
+        System.out.println("Apto para doar: " + aptoParaDoar);
+
+        sc.close();
+    }
+}
+Se quiser, posso juntar os três exercícios num único menu interativo. Deseja isso?
+
+
+
+
+
+
+
+
+Esta conversa foi útil até agora?
+
+
